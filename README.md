@@ -16,6 +16,31 @@
 
 ###### 
 
+## Formas Normales Usadas
+
+### Tabla "gama_producto":
+- **Forma Normal Aplicada:** Primera Forma Normal (1FN)
+- **Explicación:** Esta tabla está en 1FN porque cada columna contiene un solo valor atómico y no hay conjuntos repetidos de columnas. Además, no hay valores múltiples en ninguna celda.
+
+### Tabla "producto":
+- **Forma Normal Aplicada:** Segunda Forma Normal (2FN)
+- **Explicación:** La tabla "producto" está en 2FN porque cumple con 1FN y todos los atributos no clave (como nombre, precio, descripción, etc.) dependen completamente de la clave primaria (en este caso, "codigo_producto").
+
+### Tablas "proveedor" y "producto_proveedor":
+- **Forma Normal Aplicada:** Tercera Forma Normal (3FN)
+- **Explicación:** Estas tablas están en 3FN porque cumplen con 2FN y no hay dependencias transitivas entre los atributos. En otras palabras, cada atributo no clave depende solo de la clave primaria y no de otros atributos no clave.
+
+### Tablas "estado", "pais" y "region":
+- **Forma Normal Aplicada:** Primera Forma Normal (1FN)
+- **Explicación:** Estas tablas están en 1FN porque cada atributo contiene un solo valor y no hay conjuntos repetidos de columnas.
+
+### Tablas "oficina" y "empleado":
+- **Forma Normal Aplicada:** Primera Forma Normal (1FN)
+- **Explicación:** Estas tablas están en 1FN porque cada atributo contiene un solo valor y no hay conjuntos repetidos de columnas.
+
+En resumen, todas las tablas están al menos en la Primera Forma Normal, lo que garantiza que la base de datos esté bien estructurada y sin redundancias significativas. Además, las tablas "producto", "proveedor" y "producto_proveedor" están en la Tercera Forma Normal, lo que indica una mayor normalización y una mejor organización de los datos.
+
+
 ## Consultas sobre una tabla
 
 1. Devuelve un listado con el código de oficina y la ciudad donde hay oficinas.
